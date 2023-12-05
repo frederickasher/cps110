@@ -55,8 +55,11 @@ p {
 
 /* 2 */
 h1 {
-    font: weight 700px;
-
+    font-size: 30px;
+    color: black;
+    text-decoration: overline;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
 }
 
 /* 3 */
@@ -76,31 +79,32 @@ p {
 body {
     background-color: lightslategray
 }
-/* header*/
+
 nav ul {
     list-style: none;
     background-color: black;
-    margin-right: 200px;
-    margin-left: 200px;
-    margin-top: 50px;
     text-align: center;
 }
-/* links*/
+
+
 a {
     text-decoration: none;
     color: gainsboro;
     border-radius: 20px;
-    padding: 5px 5px 5px 5px;
-    Font-family: 'Courier New', Courier, monospace;
+    padding: 20px 20px;
+    font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
 }
+
 a:hover{
     background-color: black;
     color: white;
     }
+
+
 li {
-    display: inline;
-    padding: 20px;
+    display: inline-block; 
+   margin: 0 10px;
 }
 /* Structural Elements */
 .main {
@@ -216,3 +220,21 @@ a:hover {
     background-color: black;
     color: white;
 }
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+
+
+.project {
+    margin: 10px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%; 
+    height: auto; 
+}
+    
